@@ -1,0 +1,48 @@
+gas_ideal	g	g		
+Spinel	sp	s		
+Monoxide	mx	s		
+Liq(Matte_Metal)#1	mos	l		
+Liq(Matte_Metal)#2	mos#2	l		
+fcc#1	fcc	s		
+fcc#2	fcc#2	s		
+Slag#1	sl	l		
+Slag#2	sl#2	l		
+Fe2O3_hematite(s)	s	s	0	Fe2O3
+CuO_S1(s)	s	s	0	CuO
+Cu2O_S1(s)	s	s	0	Cu2O
+CuFeO2_solid(s)	s	s	0	CuFeO2
+S_Orthorhombic(s)	s	s	0	S
+S_Monoclinic(s2)	s2	s	0	S
+FeS_Pyrrhotite-2C(s)	s	s	0	FeS
+FeS2_Pyrite(s)	s	s	0	FeS2
+'Fe7S8'_pyrrhotite-4C(s)	s	s	0	Fe7S8
+Fe9S10_pyrrhotite-5C(s)	s	s	0	Fe9S10
+Fe10S11_pyrrhotite-11(s)	s	s	0	Fe10S11
+Fe11S12_pyrrhotite-6C(s)	s	s	0	Fe11S12
+FeSO4_solid(s)	s	s	0	FeSO4
+Fe2(SO4)3_solid(s)	s	s	0	Fe2[SO4]3
+CuS_Covellite(s)	s	s	0	CuS
+Cu2S_Chalcocite(s)	s	s	0	Cu2S
+Cu2S_High-chalcocite(s2)	s2	s	0	Cu2S
+CuSO4_solid(s)	s	s	0	CuSO4
+Cu2SO4_solid(s)	s	s	0	Cu2SO4
+(CuO)(CuSO4)_solid(s)	s	s	0	[CuO][CuSO4]
+CuFeS2_Chalcopyrite(s)	s	s	0	CuFeS2
+CuFe2S3_Cubanite(s)	s	s	0	CuFe2S3
+Cu3FeS4_Idaite(s)	s	s	0	Cu3FeS4
+Cu3FeS8_Fukuchilite(s)	s	s	0	Cu3FeS8
+Cu4Fe5S8_Haycockite(s)	s	s	0	Cu4Fe5S8
+Cu9Fe8S16_Talnakhite(s)	s	s	0	Cu9Fe8S16
+Cu9Fe9S16_Mooihoekite(s)	s	s	0	Cu9Fe9S16
+Cu11Fe2S13_Nukundamit(s)	s	s	0	Cu11Fe2S13
+chi_O2-	g	g	0	chi_O2
+H2O(liq)	l	l	0	H2O[liq]
+SiO2_Quartz(l)(s)	s	s	0	SiO2
+SiO2_Quartz(h)(s2)	s2	s	0	SiO2
+SiO2_Tridymite(l)(s3)	s3	s	0	SiO2
+SiO2_Tridymite(h)(s4)	s4	s	0	SiO2
+SiO2_Cristobalite(l)(s5)	s5	s	0	SiO2
+SiO2_Cristobalite(h)(s6)	s6	s	0	SiO2
+SiO2_coesite(s7)	s7	s	0	SiO2
+SiO2_stishovite(s8)	s8	s	0	SiO2
+Fe2SiO4_fayalite(s)	s	s	0	Fe2SiO4

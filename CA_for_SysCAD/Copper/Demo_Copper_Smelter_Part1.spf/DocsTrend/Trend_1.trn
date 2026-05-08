@@ -1,0 +1,5 @@
+Type,LineNo,Tag,Min,Max,TrendNo,Color,Format,Display,Other,Description,AutoScaleType
+Other,-1,"Counts(50,0)",,,-1,,,,,"Counts(Slots,Trends)"
+Other,-1,"Timebase(0,1000,1)",,,-1,,,,,"Timebase(Start,Duration,Tracking)"
+Other,-1,"GTimebase(0,1000,1)",,,-1,,,,,"GTimebase(Start,Duration,Tracking)"
+Other,-1,"ColumnWidths(44,14,7,7)",,,-1,,,,,"ColumnWidths(Tag,Value,Min,Max)"

@@ -1,0 +1,77 @@
+[General]
+Count=42
+CnvRelDiff=%
+FmtRelDiff=f3
+[ColWidth]
+TagWd=40
+ValWd=12
+RefWd=12
+DiffWd=12
+RelDiffWd=12
+DescWd=60
+[Value0]
+Tag=Gas_Input_20.QmReqd (t/h)
+Ref=100
+Fmt=f3
+[Value1]
+Blank=1
+Desc=first mos phase
+[Value2]
+Tag=P_015.Qo.QM:IPh.Cu(mos) (t/h)
+Ref=207.6341406193162
+Fmt=f3
+[Value3]
+Tag=P_015.Qo.MF:IPh.Cu(mos) (%mos)
+Ref=80.24299674532385
+Fmt=f3
+[Value4]
+Tag=P_015.Qo.MF:IPh.Cu2+(mos) (%mos)
+Ref=0.0507078270499727
+Fmt=f3
+[Value5]
+Tag=P_015.Qo.MF:IPh.Fe(mos) (%mos)
+Ref=0.3135378720968026
+Fmt=f3
+[Value6]
+Tag=P_015.Qo.MF:IPh.Fe3+(mos) (%mos)
+Ref=0.08823216867387876
+Fmt=f3
+[Value7]
+Tag=P_015.Qo.MF:IPh.O(mos) (%mos)
+Ref=0.9362971179816326
+Fmt=f3
+[Value8]
+Tag=P_015.Qo.MF:IPh.S(mos) (%mos)
+Ref=18.36822826887387
+Fmt=f3
+[Value9]
+Blank=1
+Desc=second mos phase
+[Value10]
+Tag=P_015.Qo.QM:IPh.Cu(mos#2) (t/h)
+Ref=107.4601620711114
+Fmt=f3
+[Value11]
+Tag=P_015.Qo.MF:IPh.Cu(mos#2) (%mos#2)
+Ref=98.63158221523337
+Fmt=f3
+[Value12]
+Tag=P_015.Qo.MF:IPh.Cu2+(mos#2) (%mos#2)
+Ref=0.0005383943580758473
+Fmt=f3
+[Value13]
+Tag=P_015.Qo.MF:IPh.Fe(mos#2) (%mos#2)
+Ref=0.008388141473248088
+Fmt=f3
+[Value14]
+Tag=P_015.Qo.MF:IPh.Fe3+(mos#2) (%mos#2)
+Ref=1.009548844423256e-06
+Fmt=f3
+[Value15]
+Tag=P_015.Qo.MF:IPh.O(mos#2) (%mos#2)
+Ref=0.09844371406540434
+Fmt=f3
+[Value16]
+Tag=P_015.Qo.MF:IPh.S(mos#2) (%mos#2)
+Ref=1.261046525321052
+Fmt=f3
