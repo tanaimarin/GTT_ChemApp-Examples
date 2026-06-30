@@ -1,0 +1,104 @@
+;--- SysCAD General Controller (PGM) program logic file ---
+; Revision: 1     Date:     Author:
+
+;--- variable declarations ---
+Pagelabel "Smelter KPI"
+Textbreak
+Textlabel "Recovery"
+Real Cu_in  {r, Cnv("Qm", "t/h"), comment("Cu flow in")}
+Real Cu_out {r, Cnv("Qm", "t/h"), comment("Cu flow out")}
+Real Cu_rec {r, Cnv("Frac", "%"), comment("Cu recovery")}
+Textbreak
+Textlabel "Reagents"
+Real Qm_O2  {r, Cnv("Qm", "t/h"), comment("total oxygen consumption")}
+Real O2_to_Cu {r, Cnv("MRatio", "kg/kg"), comment("total oxygen consumption per Cu produced")}
+Real Qm_Flux{r, Cnv("Qm", "t/h"), comment("total flux consumption ")}
+Real Flux_to_Cu {r, Cnv("MRatio", "kg/kg"), comment("total flux consumption per Cu produced")}
+
+;--- Logic - executed at EVERY step ---
+Cu_in      = ["P_001.Qo.QEl.Cu (t/h)"]
+Cu_out     = ["P_Blister_PS_003.Qo.QEl.Cu (t/h)"]
+Cu_rec     = iif(Cu_in > 0, Cu_out / Cu_in * 100, nan)
+Qm_O2      = ["P_O2Air_Fce_001.Qo.QM.O2(g) (t/h)"] + ["P_O2Air_PS_001.Qo.QM.O2(g) (t/h)"] + ["P_O2Air_PS_002.Qo.QM.O2(g) (t/h)"] + ["P_O2Air_PS_003.Qo.QM.O2(g) (t/h)"]
+O2_to_Cu   = iif(Cu_out>0, Qm_O2/Cu_out, nan)
+Qm_Flux    = ["Flux_Source.Qm (t/h)"] 
+Flux_to_Cu = iif(Cu_out>0, Qm_Flux/Cu_out, nan)
+$ ; --- end of file ---
+;========================================================================================
+;========================================================================================
+; Following lines are ALL IGNORED - SysCAD does not recognise anything after the $ symbol.
+
+; Useful quick reference for optional procedures executed before first step or after last step.
+
+Sub InitialisePreStart()
+  ;--- Logic executed very early before first iteration,
+  ;For example to activate/deactivate flowsheets or turn controllers/units on/off
+  
+EndSub
+
+Sub PreStart()
+  ;--- Logic executed early before first iteration,
+  ;For example to turn controllers/units on or off, set options/methods
+  
+EndSub
+
+Sub InitialiseSolution()
+  ;--- Logic executed during initialisation before first iteration
+  ;For example to set initial values, or set values in units
+EndSub
+
+Sub TerminateSolution()
+  ;--- Logic executed after last iteration (when solver is stopped)
+  ;For example calculate values for reporting
+  
+EndSub
+
+
+;========================================================================================
+; Useful quick reference for variables.
+
+;====================
+;VARIABLE DECLARATION
+
+;Variable Declaration  Data Type      Range of Values
+
+;Real or Double        Real           -1.0 E308 to 1.0 E308
+;Integer or Long       Integer        -2147483648 to 2147483647
+;String or Str         String         ASCII Character Set
+;Memo                  String         ASCII Character Set, scrolls to multiple lines.
+;Bit or CheckBox       Boolean        FALSE = 0; TRUE <> 0
+;Byte                  Integer        0 to 255
+;EnumDropList          Integer        -2147483648 to 2147483647
+
+;When a user declares a variable, they may display the variable in the Controller access window, as follows:
+;  * after the variable name allows the variable to be changed by the user in the access window (white box).
+;  @ after the variable name displays the variable, but it cannot be changed by the user (grey box).
+;  If there is neither a '*' nor an '@' then the variable is NOT displayed.
+  
+;The user may also choose to display conversion units for a real  variable (as shown in the examples below).
+
+;Conversion Type     SysCAD Symbol     Some Common Units            Variable Declaration Example
+
+;Concentration       Conc              g/L, mg/L, kg/m^3            real NickelConc@("Conc","g/L")
+;Density             Rho               kg/m^3, t/m^3, lb/ft^3       real SlurryDensity@("Rho","kg/m^3")
+;Energy              E                 J, kJ, cal                   real RequiredEnergy*("E","kJ")
+;Fraction            Frac              %, ppm, -                    real RequiredSolidsFraction*("Frac","%")
+;Mass Flow           Qm                t/h, kg/h, t/d, ST/h         real MeasuredFlow@("Qm","t/h")
+;Power               Pwr               kW, kJ/s, MJ/h, BTU/h        real PowerUsed@("Pwr","kW")
+;Pressure            P                 bar, atm, kPa, kPag, psi     real RequiredPressure*("P","bar")
+;Temperature         T                 C, K, F                      real AutoclaveTemperature@("T","C")
+;Time                Time              s, min, h, d, week           real ResidenceTime@("Time","h")
+;Volumetric Flow     Qv                m^3/h, L/h, gal/min          real WaterFlow@("Qv","m^3/h")
+
+;==================================
+;READING AND WRITING DATA TO SYSCAD
+
+;To read data from SysCAD: MeasuredValue = ["SysCAD Tag"]
+;To write data to SysCAD : ["SysCAD Tag"] = RequiredValue
+
+;=======================================================================
+;PLEASE FOLLOW THESE LINKS FOR FURTHER HELP IN THE ONLINE DOCUMENTATION:
+;    Declaring Variables:             https://help.syscad.net/Declaring_Variables
+;    Conversion Types and units:      https://help.syscad.net/Conversion_List_Table
+;    Examples of General pgm files:   https://help.syscad.net/Example_PGM_Files
+;    General PGM Help sitemap:        https://help.syscad.net/PGMs

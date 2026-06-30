@@ -1,0 +1,19 @@
+*.ScdLock
+SaveLog.txt
+ChemApp_Errors*
+ChemApp_Messages*
+Options.Summary.ini
+SpeciesData.ini
+error.inp
+
+#Folders not necessary to track
+[Hh]istorian/
+[Ll]og[Oo]utputs/
+#Legacy files for projects not upgraded yet:
+[Hh]ist*
+# Temporary excel files:
+~$*
+#Python precompiled files and cache folders:
+__pycache__/
+*.py[cod]
+*$py.class

@@ -1,0 +1,36 @@
+Type,LineNo,Tag,Min,Max,TrendNo,Color,Format,Display,Other,Description,AutoScaleType
+Other,-1,"Counts(52,11)",,,-1,,,,,"Counts(Slots,Trends)"
+Tag,0,"P_Matte_Fce_001.Qo.CMF:LPh.Cu (%Liq)","50","100.0",0,"RGB(255,255,255)","f3","Decimal","","Furnace Matte Cu grade",-7
+Tag,1,"P_Matte_PS_001.Qo.CMF:LPh.Cu (%Liq)","50","100.0",-1,"RGB(255,0,0)","f3","Decimal","","""",-7
+Tag,2,"P_Matte_PS_002.Qo.CMF:LPh.Cu (%Liq)","50","100.0",-1,"RGB(255,255,0)","f3","Decimal","","""",-7
+Tag,3,"P_Blister_PS_003.Qo.CMF:LPh.Cu (%Liq)","50","100.0",-1,"RGB(0,0,255)","f3","Decimal","","""",-7
+Tag,4,"GC_Smelter.Cu_rec (%)","90","100.0",3,"RGB(255,0,0)","f3","Decimal","","Overall Cu recovery",-7
+Tag,5,"GC_Smelter.O2_to_Cu (kg/kg)","0.0","5",9,"RGB(255,255,0)","f3","Decimal","","O2 to Cu produced ratio",-7
+Tag,6,"GC_Smelter.Flux_to_Cu (kg/kg)","0.0","1",10,"RGB(128,255,0)","f3","Decimal","","Flux to Cu produced ratio",-7
+Comment,7,"'ChemApp Engines","","",-1,"RGB(0,255,255)","f3","Decimal","","""",-7
+Tag,8,"KWA_Cu_Smelting_CST.Interface.Engines.CalcCount","0","100",-1,"RGB(0,255,255)","f3","Decimal","","""",-7
+Tag,9,"KWA_Cu_Smelting_CST.Interface.Iterations","","",-1,"RGB(0,255,0)","f3","Decimal","","""",-7
+Tag,10,"KWA_Cu_Smelting_CST.Interface.SolveTime (s)","0.0","100.0",-1,"RGB(255,0,255)","f3","Decimal","","""",-7
+Tag,11,"KWA_Cu_Smelting_CST.Interface.PerIter.CalcCount","","",-1,"RGB(255,255,255)","f3","Decimal","",": =Engines.CalcCount/Iterations",-7
+Tag,12,"KWA_Cu_Smelting_CST.Interface.PerIter.CalcTime (s)","0.0","100.0",-1,"RGB(255,0,0)","f3","Decimal","",": =Engines.CalcTime/Iterations",-7
+Comment,13,"'Slag metrics","","",-1,"RGB(0,0,255)","f3","Decimal","","""",-7
+Tag,14,"P_Slag_Fce_001.MP.Fe_To_Silica (kg/kg)","0.0","3",4,"RGB(0,255,64)","f3","Decimal","","Fe to Silica in furnace slag",-7
+Tag,15,"P_Slag_PS_001.MP.Fe_To_Silica (kg/kg)","0.0","3",5,"RGB(0,255,255)","f3","Decimal","","Fe to Silica in Converter Blow 1 slag",-7
+Tag,16,"P_Slag_PS_002.MP.Fe_To_Silica (kg/kg)","0.0","3",6,"RGB(0,128,192)","f3","Decimal","","Fe to Silica in Converter Blow 2 slag",-7
+Comment,17,"'Fce Control","","",-1,"RGB(255,255,255)","f3","Decimal","","""",-7
+Tag,18,"Fce_O2Air.QmReqd (t/h)","0.0","100.0",-1,"RGB(255,255,0)","f3","Decimal","","""",-7
+Tag,19,"Fce_Flux.QmReqd (t/h)","0.0","1",-1,"RGB(255,255,255)","f3","Decimal","","""",-7
+Comment,20,"'PS Slag Blow 1 Control","","",-1,"RGB(255,255,0)","f3","Decimal","","""",-7
+Tag,21,"PS_001_O2Air.QmReqd (t/h)","0.0","100.0",-1,"RGB(255,0,255)","f3","Decimal","","""",-7
+Tag,22,"P_Matte_PS_001.Qo.ElF.Fe (%)","0.0","8",8,"RGB(128,128,192)","f3","Decimal","","Fe end-point in Converter matte (Blow 1)",-7
+Tag,23,"PS_001_Flux.QmReqd (t/h)","0.0","100.0",-1,"RGB(255,0,0)","f3","Decimal","","""",-7
+Comment,24,"'PS Slag Blow 2 Control","","",-1,"RGB(255,255,0)","f3","Decimal","","""",-7
+Tag,25,"PS_002_O2Air.QmReqd (t/h)","0.0","100.0",-1,"RGB(255,0,255)","f3","Decimal","","""",-7
+Tag,26,"P_Matte_PS_002.Qo.ElF.Fe (%)","0.0","8",1,"RGB(255,0,255)","f3","Decimal","","Fe end-point in Converter matte (Blow 2)",-7
+Comment,27,"'PS Copper Blow Control","","",-1,"RGB(255,0,0)","f3","Decimal","","""",-7
+Tag,28,"PS_003_O2Air.QmReqd (t/h)","0.0","100.0",-1,"RGB(255,255,0)","f3","Decimal","","""",-7
+Tag,29,"P_Blister_PS_003.Qo.ElF.O (%)","0.0","100.0",-1,"RGB(0,0,255)","f3","Decimal","","""",-7
+Tag,30,"P_Blister_PS_003.Qo.ElF.S (%)","0.0","1.5",2,"RGB(128,64,64)","f3","Decimal","","S end-point in Blister (Copper Blow)",-7
+Other,-1,"Timebase(-24,30,1)",,,-1,,,,,"Timebase(Start,Duration,Tracking)"
+Other,-1,"GTimebase(-24,30,1)",,,-1,,,,,"GTimebase(Start,Duration,Tracking)"
+Other,-1,"ColumnWidths(44,14,7,7)",,,-1,,,,,"ColumnWidths(Tag,Value,Min,Max)"

@@ -1,0 +1,217 @@
+[SaveMonitor]
+Start= +0.000 : 0.000 secs  833560 Kb
+Settings= +0.058 : 0.058 secs  833560 Kb
+Documents= +0.034 : 0.092 secs  833560 Kb
+RemoteFiles= +0.012 : 0.104 secs  833560 Kb
+ZipSymbols= +0.004 : 0.108 secs  833560 Kb
+ModelDataBase= +0.294 : 0.402 secs  833560 Kb
+MoreSettings= +0.011 : 0.413 secs  833560 Kb
+WindowLayout= +0.005 : 0.418 secs  833560 Kb
+Finish= +0.008 : 0.426 secs  833764 Kb
+Complete= +0.000 : 0.426 secs  833764 Kb
+[General]
+PrjFileVersion=282
+PrjName=Demo Copper Smelter Part2
+PrjFiles=C:\SysCAD_Projects\Projects139\Examples\07 ChemApp\ChemAppFull\Copper\Demo Copper Smelter Part2.spf\
+PrjSolverMode=ProBal
+CfgFile=$Prj\..\CfgFiles\Cu_Smelting.cfg
+GraphicsFrame=Extents-A3
+GraphicsFrameSymSlct=1
+GrfUpdateAnnotation=1
+GrfAnimationOn=1
+GrfPromptForZoom=1
+GrfRegExpOn=0
+ReadOnly=0
+NumericStartingTagsBad=0
+NonNumericTagChr=35
+PGMChangeTag=1
+CSVChangeTag=1
+TagSuffixLength=3
+TagRule.UIDCharSet=0
+SpModelFixupStrategy=1
+SaveObjFiles=0
+DBRevCountToRetain=0
+Archiver_On=0
+Archiver_Name=$Prj\Archive.sac
+[LastSaveInfo]
+SysCADVersion=SysCAD 9.3 Build:139.37082
+LastSaveDate=19-Jun-2026
+LastSaveTime=10:09:56
+UserName=Tanai
+ComputerName=TANAI_DESKTOP
+License=ProBal and Dynamic OK
+LicenseInfo=Stand Alone License at C:\SysCAD139\License\  (Expires in 209 days)
+[GraphicsDocuments.System]
+WndBehaviour=2
+[TrendDocuments.System]
+WndBehaviour=2
+[TrendDocuments.Class]
+DefaultRecordIt=1
+XGridLines=5
+YGridLines=4
+Label_StartDate=0
+Label_EndDate=0
+Label_StartTime=0
+Label_EndTime=0
+Label_HundredthSecs=0
+Label_Duration=1
+Label_DurationDT=1
+Colour_BackGround=00000000
+Colour_Border=00808080
+Colour_Grid=00808080
+Colour_TimeCursor=0000ff00
+Colour_Dig=00ffffff
+Colour_Text=00ffffff
+GridWidth=3
+GridStyle=2
+TrendWidth=3
+GlobalStartTime=-24000
+GlobalDuration=30000
+GlobalTrackingTime=1
+[ControlDocuments.System]
+WndBehaviour=2
+[TagListDocuments.System]
+WndBehaviour=2
+[TagListDocuments.Class]
+EnableRef=1
+EnableDiff=1
+EnableRelDiff=1
+RefOnRun=0
+[TagList_1.lst.Document]
+Testing=123
+[Historian]
+Name=Hist_Cfg
+ScenarioName=Hist
+DataDirectory=$Prj\Historian\
+CatDirectory=$Prj\Historian\
+FileSize=1280
+SlotNoEstimate=1000
+On=1
+FilesMin=3
+FilesMax=3
+ForceCount=600
+ShowQueryInfo=1
+FixedDataExtn=0
+UseRecordingTolerance=1
+RecordingAbsTolerance=0.0001              
+RecordingRelTolerance=0.0001              
+StopGap=0.001               
+MidTimeFactor=0.99                
+[Modes]
+SolveMode=ProBal
+HeatCalculations=On
+Probal_NodeMode=Direct
+Probal_LinkMode=Direct
+Probal_FlowMode=Transfer Push
+[Solver]
+StatusWnd=1
+StatusPinned=0
+StatusErrors=0
+StatusX=1942
+StatusY=589
+[Connections]
+Marshal_On=0
+Marshal_Name=*.scm
+Marshal_CopyOption=0
+OPCServer_On=0
+OPCServer_BrowseCnvs=1
+OPCServer_ResetRegistry=0
+OPCServer_ServerNumber=0
+OPCServer_AliasOn=0
+OPCServer_AliasFileName=*.csv
+OPCServer_BrowseWhat=Tags,$Tags,Aliases
+[OPCManager]
+ShowStatsOnConnect=1
+DoLogNotes=0
+ForceOnStart=0
+ForceOnStop=0
+ForceCnt=0
+[CustomColours]
+Colour0=16754342
+Colour1=12320767
+Colour2=9550563
+Colour3=14205640
+Colour4=6421211
+Colour5=4868682
+Colour8=16740207
+Colour10=14145232
+[StatusColours]
+Options=1
+GrfShowStatusColours=1
+[Build139UpgradeTests]
+Build=139,37082
+PrjFileVersion=282
+IssueCount=0
+[GraphicsDocuments]
+DocumentCount=1
+Doc0=$Prj\DocsGraphics\01.Cu Smelter with Slag Recycle.scg
+[TrendDocuments]
+DocumentCount=1
+Doc0=$Prj\DocsTrend\Trend_1.trn
+[ControlDocuments]
+DocumentCount=0
+[TagListDocuments]
+DocumentCount=1
+Doc0=$Prj\DocsTagList\TagList_1.lst
+[Referenced_Files]
+Comment=List of referenced files in project (used in Merge)
+F0=$Prj\Reports\02GeneralReport.xlsx
+F1=$Prj\Reports\04DetailedReport.xlsx
+F2=$Prj\..\Demo_Copper_Smelt_Part2.xlsx
+F3=$Prj\..\CfgFiles\CSTFiles\KWA_Cu_Smelting.cst
+F4=$Prj\..\CfgFiles\IPhaseMap.txt
+F5=$Prj\Controls\Slag.mp
+F6=$Prj\Controls\GC_Smelter.pgm
+[Referenced_Models]
+Comment=List of model tags for referenced files in project (used in Merge)
+F3M0=KWA_Cu_Smelting_CST
+F4M0=KWA_Cu_Smelting_CST
+F5M0=P_Slag_Fce_001
+F5M1=P_Slag_PS_001
+F5M2=P_Slag_PS_002
+F5M3=P_Slag_PS_003
+F6M0=GC_Smelter
+[Other_Files]
+Comment=List of other files in project (information only!)
+F0=$Prj\Project.spj
+F1=$Prj\Options.WindowArrangement.ini
+F2=$Prj\Options.Project.ini
+F3=$Prj\Options.Summary.ini
+F4=$Prj\Options.AccessFormats.2.ini
+F5=$Prj\Options.CopyBlockData.ini
+F6=$Prj\Backup.RmtFiles.zip
+F7=$Prj\Backup.CfgFiles.2.zip
+F8=$Prj\Backup.UserSymbols.zip
+F9=$Prj\Options.Graphics.ini
+F10=$Prj\Options.GraphicStatus.ini
+F11=$Prj\..\CfgFiles\Cu_Smelting.cfg
+F12=$Prj\..\CfgFiles\SysCAD.93.db3
+F13=$Prj\Reactions\SpeciesData.ini
+F14=$Prj\Controls.Data
+F15=$Prj\ModelData.db3
+F16=$Prj\Historian\Hist_Cfg.hed
+F17=$Prj\Historian\Hist_Cfg.cat
+F18=$Prj\Historian\Hist.001
+F19=$Prj\DocsGraphics\01.Cu Smelter with Slag Recycle.scg
+F20=$Prj\DocsGraphics\01.Cu Smelter with Slag Recycle.dxf
+F21=$Prj\DocsTrend\Trend_1.trn
+F22=$Prj\DocsTagList\TagList_1.lst
+[DllsInUse]
+Dll000=Basic1,-1
+Dll001=Control1,-1
+Dll002=ScdChemApp,-1
+[ClassesInUse]
+UnitCount=31
+LinkCount=30
+Cls000=ChemAppModelCfg,1,ScdChemApp
+Cls001=ChemAppReactor,4,ScdChemApp
+Cls002=ChemAppSideCalc,4,ScdChemApp
+Cls003=FeederSink,12,Basic1
+Cls004=GControl,1,Control1
+Cls005=MakeupSource,1,Basic1
+Cls006=Pipe-1,30,Basic1
+Cls007=Tie-1,8,Basic1
+[AddOnsInUse]
+EnergyBalance=9,0
+SMDK_Runtime=0,9
+TCE=0,9

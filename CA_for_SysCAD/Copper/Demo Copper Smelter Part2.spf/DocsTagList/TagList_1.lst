@@ -1,0 +1,11 @@
+[General]
+Count=33
+CnvRelDiff=%
+FmtRelDiff=f3
+[ColWidth]
+TagWd=40
+ValWd=12
+RefWd=12
+DiffWd=12
+RelDiffWd=12
+DescWd=60
