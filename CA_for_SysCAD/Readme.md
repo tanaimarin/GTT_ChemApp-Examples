@@ -40,7 +40,7 @@ Current published examples and brief descriptions of how to use.
 
 This example demonstrate a basic flowsheet using ChemApp reactors to simulate Copper smelting process.
 
-![Figure 1: Copper primary production from chalcopyrite - SysCAD flowsheet using ChemApp for SysCAD TCE Add-on (Simple Cu Smelter Example)](Images\SimpleCuExample_Screenshot_2026-05-07_113524.png)
+![Figure 1: Copper primary production from chalcopyrite - SysCAD flowsheet using ChemApp for SysCAD TCE Add-on (Simple Cu Smelter Example)](Images/SimpleCuExample_Screenshot_2026-05-07_113524.png)
 
 *Figure 1: Copper primary production from chalcopyrite - SysCAD flowsheet using ChemApp for SysCAD TCE Add-on (Simple Cu Smelter Example)*
 
@@ -53,11 +53,11 @@ This example demonstrate a basic flowsheet using ChemApp reactors to simulate Co
 - ***right click*** in any object in the graphics page. An *Access Window* will open containing relevant information for that object
 - white fields are editable, grey fields are calculated read-only values. Example of Model Configuration unit ***KWA_Cu_Smelting_CST***:
 
-![Example Access Window](Images\KWA_Cu_Smelting_CST_AccessWindow.png)
+![Example Access Window](Images/KWA_Cu_Smelting_CST_AccessWindow.png)
 
 - Example of changing feed composition. *right-click* on ***Copper_Input_2*** feeder unit. Select ***DSp*** tab in Access Window:
 
-![Example Change Composition](Images\Copper_Input_2_AccessWindow_DSp.png)
+![Example Change Composition](Images/Copper_Input_2_AccessWindow_DSp.png)
 
   - You can select how to express the composition: *Mass Fraction*, *Mass Flow* or *molar basis* using the highlighted dropdown menu in *Species View*
 
@@ -67,7 +67,7 @@ This example demonstrate a basic flowsheet using ChemApp reactors to simulate Co
 
 - Solve the model: once you have set all the input conditions by editing parameters in different Access Windows, press ***Run*** on the main toolbar or selecting ***Actions*** from the main menu and then ***Run (Ctrl+Shift+R)***
 
-![Run Model](Images\Model_Run_Action.png)
+![Run Model](Images/Model_Run_Action.png)
 
 **Review Results**
 
@@ -76,7 +76,7 @@ All results can be manually reviewed through access windows, right-click on any 
 - For ChemApp specific results, you can examine the ChemApp Reactor units, i.e. *Smelter_4*, *Converter_12* and *Converter_19*
 right-clink on any of these units and select the ***ChemAppResults*** tab:
 
-![Converter Results](Images\Converter_12_AccessWindow_Results.png)
+![Converter Results](Images/Converter_12_AccessWindow_Results.png)
 
 - The Input and Output tabs show more details of the mixed feed stream passed on to ChemApp, using the cst phase and phase constituent definition and the equilibrium result from the ChemApp calculation
 - Additional information such as calculation time, number of ChemApp calls to this unit, etc. are also given
@@ -95,7 +95,7 @@ right-clink on any of these units and select the ***ChemAppResults*** tab:
 
 This example demonstrate the use of recycling streams and how SysCAD automatically detects and handle convergence of recirculations.
 
-![Figure 2: Copper primary production from chalcopyrite - SysCAD flowsheet using ChemApp for SysCAD TCE Add-on (Copper Smelter with Slag Recirculation)](Images\Slag_Recirculation_Screenshot_2026-06-11_065813.png)
+![Figure 2: Copper primary production from chalcopyrite - SysCAD flowsheet using ChemApp for SysCAD TCE Add-on (Copper Smelter with Slag Recirculation)](Images/Slag_Recirculation_Screenshot_2026-06-11_065813.png)
 
 *Figure 2: Copper primary production from chalcopyrite - SysCAD flowsheet using ChemApp for SysCAD TCE Add-on (Copper Smelter with Slag Recirculation)*
 
@@ -114,7 +114,7 @@ In this example, SysCAD requires 18 global iterations to solve from a reset stat
 
 You can view ChemApp specific stats by right-click on the KWA_Cu_Smelting_CST model configuration unit
 
-![ChemApp TCE Stats](Images\KWA_Cu_Smelting_CST_Engines.png)
+![ChemApp TCE Stats](Images/KWA_Cu_Smelting_CST_Engines.png)
 
 Also, note that although 76 total calls to ChemApp equilibrium were made, SysCAD automatically parallelized the flow network into two main threads and therefore used two parallel ChemApp instances, sharing the load of calls between the two.
 
